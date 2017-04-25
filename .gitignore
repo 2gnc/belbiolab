@@ -1,0 +1,8 @@
+# игнорируем все временные файлы
+#.~lock.res.odt#
+#.gitignore
+*.*#
+~*.*
+content/img-layout/*
+content/requisites.docx
+design/img/*
