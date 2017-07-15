@@ -6,7 +6,7 @@ html(lang='ru')
 		link(rel="stylesheet", href='css/font-awesome.min.css')
 		link(rel='stylesheet' href='css/main.css')
 	body.body
-		.contacts
+		section.contacts
 			.container
 				p.contacts__content 
 					i(class="fa fa-clock-o" aria-hidden="true") 
@@ -17,19 +17,31 @@ html(lang='ru')
 				p.contacts__content.contacts__content--right
 					i(class="fa fa-map-marker" aria-hidden="true") 
 					|г. Москва, ул. Профсоюзная д.58/32
-		.header
+		section.header
 			.container
 				.header__logo
 					img.header__logo-img(src = 'img/logo.png')
 				nav.header__nav.nav
 					a.nav__item(href="#") контакты
 					a.nav__item(href="#") о компании
-		.calltoaction
+		section.calltoaction
 			.container.container--cta
 					h2.calltoaction__header Выберите фермент или тип реации
 					h3.calltoaction__subheader для просмотра подробных сведений
 					hr.calltoaction__line
-		.contacts
+		section.main
+			.container
+				.main__left-side Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo perferendis, nisi et, culpa iste autem incidunt cum nulla, nemo vel molestias. Repellendus magnam expedita, libero enim magni ducimus qui necessitatibus.
+				.main__right-side
+					ul.reactions
+						li.reactions__item Ревертирование
+						li.reactions__item Точная и длинная ПЦР (LA PCR)
+						li.reactions__item Горячий старт (Hot start)
+						li.reactions__item ПЦР-РВ с зондами Taqman
+						li.reactions__item Быстрая ПЦР
+						li.reactions__item ПЦР в присутствии ингибиторов
+						li.reactions__item Мультиплексная ПЦР
+		section.contacts
 			.container
 				p.contacts__content Все права защищены (с) 2017  БелБиоЛаб, ООО 
 				p.contacts__content.contacts__content--middle 
