@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext");
+* {
+  margin: 0;
+  padding: 0; }
+
+.body {
+  color: #252525;
+  background-color: #b2ebf2;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif; }
+
+.contacts {
+  font-size: 12px;
+  width: 100%;
+  height: 2em;
+  background-color: #0097a7;
+  color: white;
+  padding-top: calc(2em/2 - 6px); }
+  .contacts__content {
+    width: 33%;
+    display: inline-block; }
+    .contacts__content--middle {
+      text-align: center; }
+    .contacts__content--right {
+      text-align: right; }
+
+.fa {
+  font-size: 1.2em;
+  margin-right: 0.5em;
+  margin-left: 1em; }
+
+.header {
+  background-color: #b2ebf2;
+  width: 100%; }
+  .header__logo {
+    width: 50%; }
+  .header__nav {
+    width: 50%;
+    padding-left: 2em; }
+
+.nav {
+  text-align: right;
+  font-size: 20px;
+  padding-top: 32px; }
+  .nav__item {
+    text-decoration: none;
+    margin-left: 1em;
+    color: #0097a7; }
+    .nav__item:hover {
+      color: #ff5722; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .container--cta {
+    display: block; }
+
+.calltoaction {
+  width: 100%;
+  height: 100px;
+  background-color: #0097a7;
+  background: url(../img/calltoaction--01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center; }
+  .calltoaction__header {
+    font-size: 2.5em;
+    font-weight: 400; }
+  .calltoaction__subheader {
+    font-weight: 400; }
+  .calltoaction__line {
+    width: 20%;
+    margin: 0.5em auto;
+    height: 2px;
+    background-color: #ff5722;
+    border: 0; }
