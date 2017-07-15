@@ -100,7 +100,7 @@
 
 .reactions {
   list-style-type: none;
-  padding-left: 1em; }
+  margin-left: 2em; }
   .reactions__item {
     width: 14em;
     background-color: #0097a7;
