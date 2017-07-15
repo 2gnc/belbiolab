@@ -1,0 +1,19 @@
+{
+  "name": "belbiolab",
+  "version": "1.0.0",
+  "description": "chemistry site",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "belbiolab"
+  },
+  "author": "Polyakova Kseniya",
+  "license": "ISC"
+}
