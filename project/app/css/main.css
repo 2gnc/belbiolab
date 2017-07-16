@@ -68,6 +68,10 @@
   padding-right: 15px; }
   .container--cta {
     display: block; }
+  .container--about {
+    display: block;
+    text-align: center;
+    padding: 3em 0; }
 
 .calltoaction {
   width: 100%;
@@ -94,7 +98,7 @@
 
 .main {
   width: 100%;
-  padding-top: 1em;
+  padding: 3em 0;
   font-family: "Roboto Condensed", sans-serif; }
   .main__left-side {
     width: calc(100%/12*9);
@@ -181,6 +185,12 @@
   .ferment:hover {
     cursor: pointer; }
 
+.ferment:hover > .ferment__info > .fa-info-circle {
+  color: #ff5722;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3); }
+
 .fa-info-circle, .fa-file-text-o {
   margin-left: 5px;
   color: #0097a7;
@@ -196,8 +206,82 @@
   -ms-transform: scale(1.3);
   transform: scale(1.3); }
 
-.fa-info-circle:hover {
-  color: #ff5722;
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3); }
+.about__header {
+  text-transform: uppercase;
+  color: #0097a7; }
+
+.about__line {
+  width: 10%;
+  margin: 0.5em auto 1em auto;
+  height: 2px;
+  background-color: #ff5722;
+  border: 0; }
+
+.about__desc {
+  margin: 1em auto; }
+
+.about__list-box {
+  display: inline-block; }
+
+.about__list {
+  font-size: 1rem;
+  text-align: left;
+  list-style-type: none; }
+
+.fa-check {
+  margin-right: 1em;
+  color: #ff5722; }
+
+.ferment-details {
+  position: absolute;
+  max-width: 855px;
+  min-width: 855px;
+  height: 690px;
+  -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  background-color: white; }
+  .ferment-details--hidden {
+    display: none; }
+  .ferment-details--visible {
+    display: block; }
+  .ferment-details__box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9em; }
+  .ferment-details__header {
+    text-align: center;
+    color: #0097a7;
+    font-family: "Roboto", sans-serif; }
+  .ferment-details__line {
+    width: 20%;
+    margin: 0.5em auto;
+    height: 2px;
+    background-color: #ff5722;
+    border: 0; }
+  .ferment-details__desc {
+    text-align: justify;
+    margin-bottom: 1em; }
+  .ferment-details__downloads {
+    text-align: center; }
+    .ferment-details__downloads:hover {
+      cursor: pointer;
+      color: #ff5722; }
+  .ferment-details__close {
+    text-align: right; }
+    .ferment-details__close:hover {
+      color: #ff5722;
+      cursor: pointer; }
+
+.ferment-table {
+  width: 100%; }
+  .ferment-table__header {
+    color: #0097a7;
+    width: 20%;
+    text-transform: uppercase; }
+  .ferment-table__desc {
+    padding: 0.3em 1em;
+    width: 80%; }
