@@ -1,0 +1,45 @@
+.ferment
+	min-width: calc( 100%/3.2 )
+	max-width: calc( 100%/3.2 )
+	height: 200px 
+	background-color: white
+	margin-bottom: 1em
+	box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8)
+	box-sizing: border-box
+	padding: 0.5em
+	position: relative
+	text-align: center
+	&__name
+	&__line
+		width: 25%
+		margin: 1em auto
+		background-color: $accentcolor
+		height: 1px
+		border: 0
+	&__desc
+		font-family: $commonfont
+		font-size: 0.8em
+	&__info
+		position: absolute
+		bottom: 0.5em
+		left: 0.5em
+	&__reactions
+		position: absolute
+		bottom: 0.5em
+		right: 0.5em
+	&__reactions--hidden
+		display: none
+	&__reactions--visible
+		display: block
+	&:hover
+		cursor: pointer
+.fa-info-circle, .fa-file-text-o
+	margin-left: 5px
+	color: $darkercolor
+	transition: transform 0.3s linear 0s
+.fa-file-text-o:hover
+	color: $accentcolor
+	transform: scale(1.3)
+.fa-info-circle:hover
+	color: $accentcolor
+	transform: scale(1.3)
