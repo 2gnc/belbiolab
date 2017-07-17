@@ -147,6 +147,15 @@
       -webkit-transform: translate(10px);
       -ms-transform: translate(10px);
       transform: translate(10px); }
+    .reactions__item--activated {
+      background-color: #ff5722;
+      cursor: pointer;
+      -webkit-transform: translate(10px);
+      -ms-transform: translate(10px);
+      transform: translate(10px);
+      color: white;
+      -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.5);
+      box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.5); }
 
 .ferment {
   min-width: calc( 100%/3.2);
