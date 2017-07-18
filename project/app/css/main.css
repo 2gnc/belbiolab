@@ -275,12 +275,17 @@
     text-align: justify;
     margin-bottom: 1em; }
   .ferment-details__downloads {
-    text-align: center; }
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    text-align: center;
+    font-weight: bold; }
     .ferment-details__downloads:hover {
       cursor: pointer;
       color: #ff5722; }
   .ferment-details__close {
-    text-align: right; }
+    text-align: right;
+    font-weight: bold; }
     .ferment-details__close:hover {
       color: #ff5722;
       cursor: pointer; }
@@ -290,7 +295,8 @@
   .ferment-table__header {
     color: #0097a7;
     width: 20%;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    vertical-align: top; }
   .ferment-table__desc {
     padding: 0.3em 1em;
     width: 80%; }
