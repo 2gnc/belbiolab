@@ -300,3 +300,6 @@
   .ferment-table__desc {
     padding: 0.3em 1em;
     width: 80%; }
+  .ferment-table__list {
+    margin-left: 2em;
+    margin-top: 0.7em; }
