@@ -128,7 +128,7 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Область применения
 									td.ferment-table__desc 
-										ul
+										ul.ferment-table__list
 											li 
 											li 
 											li 
@@ -149,42 +149,46 @@ html(lang='ru')
 							p.ferment-details__close Закрыть окно [x]
 							h2.ferment-details__header Diamant TaqD ДНК полимераза
 							hr.ferment-details__line
-							p.ferment-details__desc 
+							p.ferment-details__desc Diamant TaqD ДНК-полимераза представляет собой смесь термостабильного белка, весом 94 KDa, выделенного из рекомбинантного штамма E.coli, несущего ген полимеразы polA Thermus aquaticus YT1 и специфических мышиных моноклональных антител. Diamant TaqD ДНК-полимераза не обладает активностью в условиях приготовления ПЦР реакции, что приводит к улучшению специфичности и чувствительности по сравнению со стандартной Taq полимеразой. Два моноклональных антитела на 100% ингибируют активность фермента даже при инкубировании с субстратом в течение 1 часа при 55С. Активация фермента (диссоциация комплекса) происходит автоматически в процессе первого цикла денатурации ДНК (2 минуты при 95С).
 							table.ferment-table
 								tr
 									td.ferment-table__header Источник
-									td.ferment-table__desc 
+									td.ferment-table__desc Штамм Thermus aquaticus YT1, Мышиные анти-Taq антитела
 								tr
 									td.ferment-table__header Единица активности
-									td.ferment-table__desc 
+									td.ferment-table__desc Одна единица активности полимеразы, это количество фермента, необходимое для влючения 10 нмолей трифосфатов в кислото-нерасворимую фракцию в течение 30 минут, при 74C.
 								tr
 									td.ferment-table__header Концентрация
-									td.ferment-table__desc 
+									td.ferment-table__desc 5 ед/мкл
 								tr
 									td.ferment-table__header Буфер для хранения и разведения
-									td.ferment-table__desc 
+									td.ferment-table__desc 20mM Tris-HCl (pH 8.0);100mM KCl;0.1mM EDTA; 1mM DTT; 50% glycerol, 1 % Tween-20
 								tr
 									td.ferment-table__header Буфер для амплификации 10X
 									td.ferment-table__desc 
+										ul.ferment-table__list
+											li оптимизированный 10-кратный буфер «G»;
+											li отдельно в набор входит раствор 25 (или 50 mM) MgCl2 для оптимизации условий амплификации.
 								tr
 									td.ferment-table__header Область применения
 									td.ferment-table__desc 
-										ul
-											li 
-											li 
-											li 
+										ul.ferment-table__list
+											li мультиплекс-ПЦР-рекомендовано
+											li «низкокопийная» амплификация ДНК
+											li высоко-специфичная ПЦР
+											li ПЦР с двумеченными зондами
 								tr
 									td.ferment-table__header Сопутствующие активности
-									td.ferment-table__desc 
+									td.ferment-table__desc Эндо- и экзонуклеазные активности не обнаруживаются после инкубации в течение 2-х и 1-го часа, соответственно, 1 мкг, ДНК фага l и 0.22 мкг ДНК фага l, гидролизованного рестриктазой EcoR I, при 72о C в присутствии 15-20 ед. активности Diamant TaqD ДНК-полимераза.
 								tr
 									td.ferment-table__header Условия хранения и транспортировки
-									td.ferment-table__desc 
+									td.ferment-table__desc Diamant TaqD ДНК-полимераза хранится при -20С. Транспортировка допускается при комнатной температуре. Транспортировка более 3-х дней желательно осуществлять при температуре +4C.
 								tr
 									td.ferment-table__header Срок годности
-									td.ferment-table__desc 
+									td.ferment-table__desc 1 год
 							p.ferment-details__downloads
 								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол 
+								| Скачать протокол рутинной амплификации
 					article.ferment-details.ferment-details--hidden(data-ferment="taq")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
@@ -210,7 +214,7 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Область применения
 									td.ferment-table__desc 
-										ul
+										ul.ferment-table__list
 											li 
 											li 
 											li 
@@ -251,7 +255,7 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Область применения
 									td.ferment-table__desc 
-										ul
+										ul.ferment-table__list
 											li 
 											li 
 											li 
@@ -270,45 +274,50 @@ html(lang='ru')
 					article.ferment-details.ferment-details--hidden(data-ferment="revertp")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
-							h2.ferment-details__header Diamant TaqA ДНК полимераза
+							h2.ferment-details__header Diamant RevertP РНК-зависимая ДНК-полимераза
 							hr.ferment-details__line
-							p.ferment-details__desc 
+							p.ferment-details__desc Diamant RevertP Полимераза представляет собой белок, выделенный из рекомбинантного штамма E.coli, несущего ген данной полимеразы. Полимераза обладает 3'-5'-обратно-транскриптазной и 5'-3'-полимеразной активностью, способна осуществлять амплификацию с одновременным вытеснением впереди лежащей на матрице комплиментарной цепи ДНК (strand displacement), у фермента отсутствует 3'-5'-экзонуклеазная активность.
 							table.ferment-table
 								tr
 									td.ferment-table__header Источник
-									td.ferment-table__desc 
+									td.ferment-table__desc Бактериофаг
 								tr
 									td.ferment-table__header Единица активности
-									td.ferment-table__desc 
+									td.ferment-table__desc Одна единица активности полимеразы условно равна:
+										ul.ferment-table__list
+											li 1 ед обратной транскриптазы MMLV при 370С в реакции элонгации oligodT12 праймера
+											li 1U Taq-полимеразы в реакции элонгации специфического ДНК олигонуклеотида при 600С
 								tr
 									td.ferment-table__header Концентрация
-									td.ferment-table__desc 
+									td.ferment-table__desc 10 ед/мкл
 								tr
 									td.ferment-table__header Буфер для хранения и разведения
-									td.ferment-table__desc 
+									td.ferment-table__desc 50 mM Tris-HCl (pH 7.5); 1 mM EDTA; 0.5 mM DTT; 50% glycerol, 0.1 % Tween-20
 								tr
 									td.ferment-table__header Буфер для амплификации 10X
-									td.ferment-table__desc 
+									td.ferment-table__desc Применяется входящий в комплект 10-кратный буфер TG, содержащий 3 mM MgCl2 в 1Х концентрации
 								tr
 									td.ferment-table__header Область применения
 									td.ferment-table__desc 
-										ul
-											li 
-											li 
-											li 
+										ul.ferment-table__list
+											li LAMP-амплификация
+											li One-Step RT-PCR
 								tr
 									td.ferment-table__header Сопутствующие активности
-									td.ferment-table__desc 
+									td.ferment-table__desc Эндо- и экзонуклеазные активности не обнаруживаются после инкубации в течение 2-х и 1-го часа, соответственно, 1 мкг, ДНК фага l и 0.22 мкг ДНК фага l, гидролизованного рестриктазой EcoR I, при 72о C в присутствии 15-20 ед. активности • Diamant RevertP Полимеразы.
 								tr
-									td.ferment-table__header Условия хранения и транспортировки
-									td.ferment-table__desc 
+									td.ferment-table__header Условия хранения
+									td.ferment-table__desc Diamant RevertP полимераза хранится при -20 оС.
+								tr
+									td.ferment-table__header Условия транспортировки
+									td.ferment-table__desc Транспортировку Diamant RevertP полимеразы осуществляют при +4°С.
 								tr
 									td.ferment-table__header Срок годности
-									td.ferment-table__desc 
+									td.ferment-table__desc 1 год.
 							p.ferment-details__downloads
 								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол 
-					article.ferment-details.ferment-details--visible(data-ferment="revertm")
+								| Скачать протокол реакции обратной транскрипции и ПЦР-РВ
+					article.ferment-details.ferment-details--hidden(data-ferment="revertm")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
 							h2.ferment-details__header Diamant RevertM РНК-зависимая ДНК-полимераза
@@ -370,7 +379,7 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Область применения
 									td.ferment-table__desc 
-										ul
+										ul.ferment-table__list
 											li 
 											li 
 											li 
@@ -411,7 +420,7 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Область применения
 									td.ferment-table__desc 
-										ul
+										ul.ferment-table__list
 											li 
 											li 
 											li 
@@ -439,7 +448,7 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Рекомендации по постановке ПЦР-РВ
 									td.ferment-table__desc 
-										ul
+										ul.ferment-table__list
 											li Используйте до 500 нг геномной ДНК и до 10 нг плазмидной ДНК;
 											li Мы рекомендуем ставить реакцию в объеме 25 мкл;
 											li Приготовление общей реакционной смеси, включающей все компоненты, кроме ДНК помогает избегать ошибок пипетирования;
