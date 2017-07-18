@@ -17,7 +17,7 @@ gulp.task( 'sass', function() {
 	return gulp.src( 'src/main.sass' )
 	.pipe(sass())
 	.pipe(autopref({
-		browsers: ['last 3 versions'],
+		browsers: ['last 5 versions'],
 		cascade: false
 	}))
 	.pipe(gulp.dest( 'app/css/' ))
