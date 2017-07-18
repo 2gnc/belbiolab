@@ -243,9 +243,10 @@
 
 .ferment-details {
   position: absolute;
+  top: 13.5em;
   max-width: 855px;
   min-width: 855px;
-  height: 690px;
+  height: 720px;
   -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
   box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
   -webkit-box-sizing: border-box;
@@ -262,6 +263,7 @@
     height: 100%;
     font-size: 0.9em; }
   .ferment-details__header {
+    margin-top: 0.5em;
     text-align: center;
     color: #0097a7;
     font-family: "Roboto", sans-serif; }
@@ -275,14 +277,15 @@
     text-align: justify;
     margin-bottom: 1em; }
   .ferment-details__downloads {
+    list-style: none;
     position: absolute;
-    bottom: 1em;
+    bottom: 0.5em;
     width: 100%;
     text-align: center;
     font-weight: bold; }
-    .ferment-details__downloads:hover {
-      cursor: pointer;
-      color: #ff5722; }
+  .ferment-details__download-item:hover {
+    cursor: pointer;
+    color: #ff5722; }
   .ferment-details__close {
     text-align: right;
     font-weight: bold; }
@@ -301,5 +304,4 @@
     padding: 0.3em 1em;
     width: 80%; }
   .ferment-table__list {
-    margin-left: 2em;
-    margin-top: 0.7em; }
+    margin-left: 2em; }
