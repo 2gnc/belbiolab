@@ -141,9 +141,10 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Срок годности
 									td.ferment-table__desc 
-							p.ferment-details__downloads
-								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол 
+							ul.ferment-details__downloads
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол 
 					article.ferment-details.ferment-details--hidden(data-ferment="taqd")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
@@ -186,9 +187,10 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Срок годности
 									td.ferment-table__desc 1 год
-							p.ferment-details__downloads
-								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол рутинной амплификации
+							ul.ferment-details__downloads
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол рутинной амплификации
 					article.ferment-details.ferment-details--hidden(data-ferment="taq")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
@@ -227,9 +229,10 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Срок годности
 									td.ferment-table__desc 
-							p.ferment-details__downloads
-								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол 
+							ul.ferment-details__downloads
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол 
 					article.ferment-details.ferment-details--hidden(data-ferment="proteinasak")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
@@ -268,9 +271,10 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Срок годности
 									td.ferment-table__desc 
-							p.ferment-details__downloads
-								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол 
+							ul.ferment-details__downloads
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол 
 					article.ferment-details.ferment-details--hidden(data-ferment="revertp")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
@@ -314,9 +318,10 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Срок годности
 									td.ferment-table__desc 1 год.
-							p.ferment-details__downloads
-								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол реакции обратной транскрипции и ПЦР-РВ
+							ul.ferment-details__downloads
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол реакции обратной транскрипции и ПЦР-РВ
 					article.ferment-details.ferment-details--hidden(data-ferment="revertm")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
@@ -351,50 +356,55 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Срок годности
 									td.ferment-table__desc 1 год.
-							p.ferment-details__downloads
-								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол синтеза кДНК
-					article.ferment-details.ferment-details--hidden(data-ferment="blitz")
+							ul.ferment-details__downloads
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол синтеза кДНК
+					article.ferment-details.ferment-details--visible(data-ferment="blitz")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
-							h2.ferment-details__header Diamant TaqA ДНК полимераза
+							h2.ferment-details__header Diamant Blitz -химерная ДНК полимераза для высокоточной ПЦР
 							hr.ferment-details__line
-							p.ferment-details__desc 
+							p.ferment-details__desc Diamant Blitz ДНК полимераза представляет собой термостабильный химерный белок, полученный путем слияния двух белков: ДНК-полимеразы класса В Pyrococcus furiosus (pfu-полимеразы) и неспецифического ДНК-связывающего домена Sulfolobus solfataricus (sso7d). Наличие дополнительного sso7d домена приводит к увеличению процессивности полимеразы (время элонгации может быть снижено до 15 сек для амплификации фрагмента длиной 1 kbp ) и к повышенной резистентности фермента к ингибиторам ПЦР (например к крови). Высокая точность синтеза, присущая ферменту и возможность амплифицировать длинные матрицы делает его пригодным для использования в реакциях введения мутаций и безлигазного клонирования генов и библиотек генов.
 							table.ferment-table
 								tr
 									td.ferment-table__header Источник
-									td.ferment-table__desc 
+									td.ferment-table__desc Штаммы Pyrococcus furiosus, Sulfolobus solfataricus
 								tr
 									td.ferment-table__header Единица активности
-									td.ferment-table__desc 
+									td.ferment-table__desc Одной единицы активности Diamant Blitz достаточно для проведения реакции амплификации в объеме 50 мкл. Иногда может потребоваться дополнительная оптимизация количества фермента (0,25 – 1,5 ед на 50 мкл) для улучшения специфичности ПЦР.
 								tr
 									td.ferment-table__header Концентрация
-									td.ferment-table__desc 
+									td.ferment-table__desc 2 ед/мкл
 								tr
 									td.ferment-table__header Буфер для хранения и разведения
-									td.ferment-table__desc 
+									td.ferment-table__desc 20mM Tris-HCl (pH 8.0);100mM KCl;0.1mM EDTA; 1mM DTT; 50% glycerol, 1 % Tween-20
 								tr
 									td.ferment-table__header Буфер для амплификации 10X
-									td.ferment-table__desc 
+									td.ferment-table__desc Оптимизированный 2,5-кратный буфер HF, включающий в свой состав MgCl2 и смесь дНТФ в конечных концентрациях 2 mM и 0,2 mM соответственно. В буфер входит специальный энхансер ПЦР, приводящий к лучшему выходу продукта при использовании сложных и плохо-очищенных матриц. Отдельно в набор входит раствор 50 mM MgCl2 для оптимизации условий амплификации.
 								tr
 									td.ferment-table__header Область применения
 									td.ferment-table__desc 
 										ul.ferment-table__list
-											li 
-											li 
-											li 
+											li Высокоточный ПЦР;
+											li ПЦР длинных фрагментов (>10 kbp);
+											li «Direct-ПЦР» с использованием в качестве матрицы ЭДТА-стабилизированной крови (до 15%).
 								tr
 									td.ferment-table__header Сопутствующие активности
-									td.ferment-table__desc 
+									td.ferment-table__desc Эндо- и экзонуклеазные активности не обнаруживаются после инкубации в течение 2-х и 1-го часа, соответственно, 1 мкг, ДНК фага l и 0.22 мкг ДНК фага l, гидролизованного рестриктазой EcoR I, при 72C в присутствии 15-20 ед. активности Diamant Blitz ДНК полимеразы.
 								tr
 									td.ferment-table__header Условия хранения и транспортировки
-									td.ferment-table__desc 
+									td.ferment-table__desc Diamant Blitz ДНК полимераза хранится при -20С. Транспортировка возможна при комнатной температуре. Длительная транспортировка (более 3-х дней) осуществлять при температуре +4С.
 								tr
 									td.ferment-table__header Срок годности
-									td.ferment-table__desc 
-							p.ferment-details__downloads
-								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол 
+									td.ferment-table__desc 1 год.
+							ul.ferment-details__downloads
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол рутинной амплификации
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол ПЦР
 					article.ferment-details.ferment-details--hidden(data-ferment="onestep")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
@@ -433,9 +443,10 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Срок годности
 									td.ferment-table__desc 
-							p.ferment-details__downloads
-								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол 
+							ul.ferment-details__downloads
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол 
 					article.ferment-details.ferment-details--hidden(data-ferment="fastprobe")
 						.ferment-details__box
 							p.ferment-details__close Закрыть окно [x]
@@ -465,9 +476,10 @@ html(lang='ru')
 								tr
 									td.ferment-table__header Срок годности
 									td.ferment-table__desc 1 год со дня проведения тестирования (хранение при -20).
-							p.ferment-details__downloads
-								i(class="fa fa-file-pdf-o" aria-hidden="true")
-								| Скачать протокол постановки ПЦР с 2X Fast Probe qPCR Mastermix
+							ul.ferment-details__downloads
+								li.ferment-details__download-item
+									i(class="fa fa-file-pdf-o" aria-hidden="true")
+									| Скачать протокол постановки ПЦР с 2X Fast Probe qPCR Mastermix
 				.main__right-side
 					ul.reactions
 						li.reactions__item(id="r-revert") Ревертирование
