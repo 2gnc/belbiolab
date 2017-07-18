@@ -243,7 +243,9 @@
 
 .ferment-details {
   position: absolute;
+  z-index: 999;
   top: 13.5em;
+  left: calc(50% - 855px/2);
   max-width: 855px;
   min-width: 855px;
   height: 720px;
