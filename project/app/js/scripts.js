@@ -1,8 +1,7 @@
 'use strict';
 var allFerments = document.querySelectorAll( '.ferment' ),
 	allFermentsDetails = document.querySelectorAll( '.ferment-details' ),
-	allCloseLinks = document.querySelectorAll( '.ferment-details__close' ),
-	fieldToHide = document.querySelectorAll( '.ferment-details__box' );
+	allCloseLinks = document.querySelectorAll( '.ferment-details__close' );
 
 
 for( var i = 0; i < allFerments.length; i++) {
