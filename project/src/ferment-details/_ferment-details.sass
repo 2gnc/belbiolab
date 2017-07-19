@@ -1,26 +1,26 @@
 .ferment-details
-	position: absolute
-	z-index: 999
-	top: 13.5em
-	left: calc(50% - 855px/2)
-	max-width: 855px
-	min-width: 855px
-	height: 720px
-	box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8)
-	box-sizing: border-box
-	padding: 1em
-	background-color: white
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.5)
 	&--hidden
 		display: none
 	&--visible
 		display: block
 	&__box
+		background-color: white
+		width: 80vw
+		height: 90vh
 		position: relative
-		width: 100%
-		height: 100%
+		left: 10vw
+		top: 5vw
+		box-sizing: border-box
+		padding: 1em 1.5em
 		font-size: 0.9em
+		box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8)
 	&__header
-		margin-top: 0.5em
 		text-align: center
 		color: $darkercolor
 		font-family: $commonfont
@@ -36,7 +36,7 @@
 	&__downloads
 		list-style: none
 		position: absolute
-		bottom: 0.5em
+		bottom: 1em
 		width: 100%
 		text-align: center
 		font-weight: bold
@@ -46,7 +46,6 @@
 			color: $accentcolor
 	&__close
 		text-align: right
-		font-weight: bold
 		&:hover
 			color: $accentcolor
 			cursor: pointer

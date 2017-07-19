@@ -246,30 +246,30 @@
   color: #ff5722; }
 
 .ferment-details {
-  position: absolute;
-  z-index: 999;
-  top: 13.5em;
-  left: calc(50% - 855px/2);
-  max-width: 855px;
-  min-width: 855px;
-  height: 720px;
-  -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 1em;
-  background-color: white; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
   .ferment-details--hidden {
     display: none; }
   .ferment-details--visible {
     display: block; }
   .ferment-details__box {
+    background-color: white;
+    width: 80vw;
+    height: 90vh;
     position: relative;
-    width: 100%;
-    height: 100%;
-    font-size: 0.9em; }
+    left: 10vw;
+    top: 5vw;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 1em 1.5em;
+    font-size: 0.9em;
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8); }
   .ferment-details__header {
-    margin-top: 0.5em;
     text-align: center;
     color: #0097a7;
     font-family: "Roboto", sans-serif; }
@@ -285,7 +285,7 @@
   .ferment-details__downloads {
     list-style: none;
     position: absolute;
-    bottom: 0.5em;
+    bottom: 1em;
     width: 100%;
     text-align: center;
     font-weight: bold; }
@@ -293,8 +293,7 @@
     cursor: pointer;
     color: #ff5722; }
   .ferment-details__close {
-    text-align: right;
-    font-weight: bold; }
+    text-align: right; }
     .ferment-details__close:hover {
       color: #ff5722;
       cursor: pointer; }
