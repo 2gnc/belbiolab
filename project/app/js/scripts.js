@@ -19,15 +19,25 @@ function showFermentDetails(e) {
 		if ( allFermentsDetails[i].getAttribute('data-ferment') == targetFermentID ) {
 			allFermentsDetails[i].classList.remove( 'ferment-details--hidden' );
 			allFermentsDetails[i].classList.add( 'ferment-details--visible' );
+			document.addEventListener( 'click', closeFromOutside );
 			}
-		} 
+		}
 	};
 
 function hideFermentDetails(e) {
 	var elementToClose = this.parentNode.parentNode;
 	elementToClose.classList.remove( 'ferment-details--visible' );
 	elementToClose.classList.add( 'ferment-details--hidden' );
+	document.removeEventListener( 'click', closeFromOutside );
 	};
+
+function closeFromOutside(e) {
+	if( e.target.tagName == 'ARTICLE' ) {
+		e.target.classList.remove( 'ferment-details--visible' );
+		e.target.classList.add( 'ferment-details--hidden' );
+		document.removeEventListener( 'click', closeFromOutside );
+	}
+}
 
 // открытие-закрытие модального окна с описанием фермента
 
