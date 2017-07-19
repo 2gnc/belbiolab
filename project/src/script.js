@@ -1,8 +1,7 @@
 'use strict';
 var allFerments = document.querySelectorAll( '.ferment' ),
 	allFermentsDetails = document.querySelectorAll( '.ferment-details' ),
-	allCloseLinks = document.querySelectorAll( '.ferment-details__close' );
-
+	allCloseLinks = document.querySelectorAll( '.ferment-details__close' ); 
 
 for( var i = 0; i < allFerments.length; i++) {
 	allFerments[i].addEventListener( 'click', showFermentDetails )
@@ -20,7 +19,6 @@ function showFermentDetails(e) {
 		if ( allFermentsDetails[i].getAttribute('data-ferment') == targetFermentID ) {
 			allFermentsDetails[i].classList.remove( 'ferment-details--hidden' );
 			allFermentsDetails[i].classList.add( 'ferment-details--visible' );
-			allFermentsDetails[i].addEventListener( 'click', hideFermentDetailsFromOutside );
 			}
 		} 
 	};
@@ -31,10 +29,6 @@ function hideFermentDetails(e) {
 	elementToClose.classList.add( 'ferment-details--hidden' );
 	};
 
-function hideFermentDetailsFromOutside(e) {
-	this.classList.remove( 'ferment-details--visible' );
-	this.classList.add( 'ferment-details--hidden' );
-	};
 // открытие-закрытие модального окна с описанием фермента
 
 // переключение выбранного типа реакций
