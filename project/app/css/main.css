@@ -265,7 +265,7 @@
     top: 5vw;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 1em 1.5em;
+    padding: 1em 2em;
     font-size: 0.9em;
     -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
     box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8); }
@@ -275,13 +275,13 @@
     font-family: "Roboto", sans-serif; }
   .ferment-details__line {
     width: 20%;
-    margin: 0.5em auto;
+    margin: 0.5em auto 1em auto;
     height: 2px;
     background-color: #ff5722;
     border: 0; }
   .ferment-details__desc {
     text-align: justify;
-    margin-bottom: 1em; }
+    margin-bottom: 2em; }
   .ferment-details__downloads {
     list-style: none;
     position: absolute;
