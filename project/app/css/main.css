@@ -213,12 +213,6 @@
   transition: transform 0.3s linear 0s;
   transition: transform 0.3s linear 0s, -webkit-transform 0.3s linear 0s; }
 
-.fa-file-text-o:hover {
-  color: #ff5722;
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3); }
-
 .about__header {
   text-transform: uppercase;
   color: #0097a7; }
@@ -282,16 +276,11 @@
   .ferment-details__desc {
     text-align: justify;
     margin-bottom: 2em; }
+  .ferment-details__link {
+    color: #ff5722;
+    text-decoration: none; }
   .ferment-details__downloads {
-    list-style: none;
-    position: absolute;
-    bottom: 1em;
-    width: 100%;
-    text-align: center;
-    font-weight: bold; }
-  .ferment-details__download-item:hover {
-    cursor: pointer;
-    color: #ff5722; }
+    list-style: none; }
   .ferment-details__close {
     text-align: right; }
     .ferment-details__close:hover {
