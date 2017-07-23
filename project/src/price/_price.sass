@@ -1,0 +1,51 @@
+.price
+	text-align: center
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	&__plan
+		box-sizing: border-box
+		border-radius: 0.3em
+		border: 1px solid $bgcolor
+		width: 25%
+		min-width: 20em
+		margin: 0 1em 1em 1em
+		padding: 2em 3em
+	&__header
+	&__header-name
+		text-transform: uppercase
+		color: $darkercolor
+	&__price
+		font-size: 200%
+		padding: 0.2em 0
+		font-weight: bolder
+	&__desc
+		padding: 0.5em 0
+		margin-bottom: 1em
+		border-top: 1px solid $bgcolor
+		border-bottom: 1px solid $bgcolor
+		font-style: italic
+	&__details
+	&__button
+		box-sizing: border-box
+		margin-top: 1em 
+		border: 1px solid $accentcolor
+		width: 100%
+		padding: 0.8em 0
+		background-color: $accentcolor
+		border-radius: 3em
+		color: white
+		text-transform: uppercase
+		font-family: $accentfont
+		font-size: 1em
+		&:hover
+			cursor: pointer
+			background-color: transparent
+			transition: background-color 0.3s linear 0s
+			color: $accentcolor
+		&:focus
+			outline: none
+		&:active
+			background-color: $accentcolor
+			color: white
+			transition: all 0.3s linear 0s
