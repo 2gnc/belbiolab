@@ -43,7 +43,6 @@ function closeFromOutside(e) {
 		document.removeEventListener( 'click', closeFromOutside );
 	}
 }
-
 // переключение выбранного типа реакций
 for ( var l = 0; l < reactions.length; l++ ) {
 	reactions[l].addEventListener( 'click', function(e) {
@@ -51,29 +50,41 @@ for ( var l = 0; l < reactions.length; l++ ) {
 		var targetReaction = this;
 // переключили модификатор у элемента, по которому кликнули
 		targetReaction.classList.toggle('reactions__item--activated');
+
 // проверили остальные и сняли у них ранее установленный активный модификатор
-		for ( var m = 0; m < reactions.length; m++ ) {
-			if( reactions[m] != targetReaction && reactions[m].classList.contains( 'reactions__item--activated' ) ) {
-					reactions[m].classList.remove( 'reactions__item--activated' );
+		( () => {
+			for ( var m = 0; m < reactions.length; m++ ) {
+				if( reactions[m] != targetReaction && reactions[m].classList.contains( 'reactions__item--activated' ) ) {
+						reactions[m].classList.remove( 'reactions__item--activated' );
+						}
+					}
+				})();
+
+// проверим есть полускрытые ранее ли карточки
+	( () => { for( var i = 0; i < allFerments.length; i++ ) {
+				if(allFerments[i].classList.contains('ferment--semi-visible')) {
+					allFerments[i].classList.remove( 'ferment--semi-visible' );
 					}
 				}
-// проверили id элемента, по которому кликнули, запустили отбор подходящих плиток
+			})();
+
+// если нажатый элемент имеет модификатор --activated
+	// проверили id элемента, по которому кликнули, запустили отбор подходящих плиток
 		var reactionToShow = e.currentTarget.id;
-// отобрали все ферменты и для каждого 
-		for ( var n = 0; n < allFerments.length; n++ ) {
-// получим список подходящих реакций и преобразуем в массив
-			if( allFerments[n].getAttribute('data-reactions') != null ) {
-				var reactionsList = allFerments[n].getAttribute('data-reactions').split( ', ' );
-// в полученном массиве поищем нашу реакцию
-				if( reactionsList.indexOf( reactionToShow ) == -1 ) {
-					allFerments[n].classList.add( 'ferment--semi-visible' );
-					}
-				};
-			}
-
-// прописать случаи для снятия выделения и для переключения на другую реакцию
-		})
-	};
-
-
-// отбор ферментов в зависимости от выбранного типа реакции
+		if(e.currentTarget.classList.contains( 'reactions__item--activated' )) {
+	// отобрали все ферменты и для каждого
+			( () => { 
+				for ( var n = 0; n < allFerments.length; n++ ) {
+	// получим список подходящих реакций и преобразуем в массив
+				if( allFerments[n].getAttribute('data-reactions') != null ) {
+					var reactionsList = allFerments[n].getAttribute('data-reactions').split( ', ' );
+	// в полученном массиве поищем нашу реакцию
+					if( reactionsList.indexOf( reactionToShow ) == -1 ) {
+						allFerments[n].classList.add( 'ferment--semi-visible' );
+						}
+					};
+				}
+			})();
+		};
+	})
+};
