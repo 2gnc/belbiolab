@@ -52,7 +52,7 @@ for ( var l = 0; l < reactions.length; l++ ) {
 		targetReaction.classList.toggle('reactions__item--activated');
 
 // проверили остальные и сняли у них ранее установленный активный модификатор
-		( () => {
+		( function() {
 			for ( var m = 0; m < reactions.length; m++ ) {
 				if( reactions[m] != targetReaction && reactions[m].classList.contains( 'reactions__item--activated' ) ) {
 						reactions[m].classList.remove( 'reactions__item--activated' );
@@ -61,7 +61,7 @@ for ( var l = 0; l < reactions.length; l++ ) {
 				})();
 
 // проверим есть полускрытые ранее ли карточки
-	( () => { for( var i = 0; i < allFerments.length; i++ ) {
+	( function() { for( var i = 0; i < allFerments.length; i++ ) {
 				if(allFerments[i].classList.contains('ferment--semi-visible')) {
 					allFerments[i].classList.remove( 'ferment--semi-visible' );
 					}
@@ -73,7 +73,7 @@ for ( var l = 0; l < reactions.length; l++ ) {
 		var reactionToShow = e.currentTarget.id;
 		if(e.currentTarget.classList.contains( 'reactions__item--activated' )) {
 	// отобрали все ферменты и для каждого
-			( () => { 
+			( function() { 
 				for ( var n = 0; n < allFerments.length; n++ ) {
 	// получим список подходящих реакций и преобразуем в массив
 				if( allFerments[n].getAttribute('data-reactions') != null ) {
