@@ -330,7 +330,9 @@
     padding: 2em 3em; }
   .price__header-name {
     text-transform: uppercase;
-    color: #0097a7; }
+    color: #0097a7;
+    font-weight: bolder;
+    font-family: "Roboto", sans-serif; }
   .price__price {
     font-size: 200%;
     padding: 0.2em 0;
@@ -346,7 +348,7 @@
     box-sizing: border-box;
     margin-top: 1em;
     border: 1px solid #ff5722;
-    width: 100%;
+    width: 80%;
     padding: 0.8em 0;
     background-color: #ff5722;
     border-radius: 3em;
