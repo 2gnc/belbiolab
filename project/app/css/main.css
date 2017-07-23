@@ -255,16 +255,17 @@
   .ferment-details__box {
     background-color: white;
     width: 80vw;
-    height: 90vh;
+    height: 80vh;
     position: relative;
     left: 10vw;
-    top: 5vw;
+    top: 10vh;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 1em 2em;
     font-size: 0.9em;
     -webkit-box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
-    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8); }
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.8);
+    overflow: auto; }
   .ferment-details__header {
     text-align: center;
     color: #0097a7;
