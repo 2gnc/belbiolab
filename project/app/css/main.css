@@ -19,6 +19,8 @@
   font-style: normal;
   color: white;
   padding-top: calc(2em/2 - 6px); }
+  .contacts--tablet-landscape {
+    display: none; }
   .contacts__content {
     width: 33%;
     display: inline-block; }
@@ -34,24 +36,16 @@
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
   .contacts {
-    font-size: 12px;
-    width: 100%;
-    height: 2em;
-    background-color: #0097a7;
-    font-style: normal;
-    color: white;
-    padding-top: calc(2em/2 - 6px); }
+    display: none; }
+    .contacts--tablet-landscape {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      background-color: #0097a7; }
     .contacts__content {
-      width: 33%;
-      display: inline-block; }
-      .contacts__content--middle {
-        text-align: center; }
-      .contacts__content--right {
-        text-align: right; }
-  .fa {
-    font-size: 1.2em;
-    margin-right: 0.5em;
-    margin-left: 1em; } }
+      min-width: 100%;
+      padding: 1em 0; } }
 
 .header {
   background-color: #b2ebf2;
@@ -96,6 +90,20 @@
     display: block;
     text-align: center;
     padding: 3em 0; }
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  .container--footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    color: white; } }
 
 .calltoaction {
   width: 100%;
