@@ -176,7 +176,10 @@
   position: relative;
   text-align: center; }
   .ferment--semi-visible {
-    opacity: 0.5; }
+    opacity: 0.5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 1px solid rgba(0, 0, 0, 0.2); }
   .ferment__line {
     width: 25%;
     margin: 1em auto;
