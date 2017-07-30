@@ -4,6 +4,7 @@ html(lang='ru')
 		meta(charset='UTF-8')
 		meta(name="yandex-verification" content="3e759c71ca1531a3")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(description="Ферменты, ДНК полимеразы, протеиназа, полимеразы и ферменты для молукулярной биологии")
 		title Компания БелБиоЛаб - ферменты для молекулярной биологии
 		link(rel="stylesheet", href='css/font-awesome.min.css')
 		link(rel='stylesheet' href='css/main.css')
@@ -22,7 +23,7 @@ html(lang='ru')
 		section.header
 			.container
 				.header__logo
-					img.header__logo-img(src = 'img/logo.png')
+					img.header__logo-img(src = 'img/logo1.png')
 				nav.header__nav.nav
 					a.nav__item(href="#aboutsection") о компании
 		section.calltoaction
@@ -47,14 +48,14 @@ html(lang='ru')
 						p.ferment__info
 							i(class="fa fa-info-circle" aria-hidden="true")
 						p.ferment__reactions.ferment__reactions--hidden some text
-					.ferment(id="taq")
+					.ferment(id="taq" data-reactions="other")
 						h2.ferment__name Diamant Taq
 						hr.ferment__line 
-						p.ferment__desc Рекомбинантная Taq-ДНК-полимераза с активацией при температуре выше 74&degC. 
+						p.ferment__desc Рекомбинантная Taq-ДНК-полимераза. 
 						p.ferment__info
 							i(class="fa fa-info-circle" aria-hidden="true")
 						p.ferment__reactions.ferment__reactions--hidden some text
-					.ferment(id="proteinasak")
+					.ferment(id="proteinasak" data-reactions="other")
 						h2.ferment__name Протеиназа К
 						hr.ferment__line
 						p.ferment__desc Сухая протеиназа для удаления белковых примесей в препаратах нуклеиновых кислот.
@@ -250,7 +251,7 @@ html(lang='ru')
 				p.ferment-details__close Закрыть окно [x]
 				h2.ferment-details__header Taq ДНК полимераза
 				hr.ferment-details__line
-				p.ferment-details__desc Taq ДНК-полимераза представляет собой термостабильный белок весом 94 KDa, выделенный из рекомбинантного штамма E.coli, несущего ген полимеразы polA Thermus aquaticus YT1.
+				p.ferment-details__desc Рекомбинантная Taq-ДНК-полимераза представляет собой термостабильный белок весом 94 KDa, выделенный из рекомбинантного штамма E.coli, несущего ген полимеразы polA Thermus aquaticus YT1.
 				table.ferment-table
 					tr
 						td.ferment-table__header Состав
