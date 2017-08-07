@@ -260,7 +260,8 @@
   border: 0; }
 
 .about__desc {
-  margin: 1em auto; }
+  margin: 1em auto;
+  padding: 1em; }
 
 .about__list-box {
   display: inline-block; }
