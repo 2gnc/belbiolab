@@ -24,3 +24,26 @@
 			transform: translate(10px)
 			color: white
 			box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.5)
+@media screen and (max-width:320px)
+	.reactions
+		margin-left: 0
+		&__item
+			display: inline-block
+			margin-bottom: 0.3em
+			padding: 0.3em 0 
+			min-height: 1em
+			box-shadow: none
+			background-color: transparent
+			color: $darkercolor
+			text-transform: uppercase
+			border-bottom: 1px dotted $accentcolor
+			&:hover
+				background-color: transparent
+				cursor: pointer
+				box-shadow: none
+				transition: transform 0.3s linear 0s
+				color: $darkercolor
+			&--activated
+				transform: translate(2em)
+				color: white
+				box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.5)
