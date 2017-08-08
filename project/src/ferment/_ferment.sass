@@ -23,27 +23,8 @@
 	&__desc
 		font-family: $commonfont
 		font-size: 0.8em
-	&__info
-		position: absolute
-		bottom: 0.5em
-		left: 0.5em
-	&__reactions
-		position: absolute
-		bottom: 0.5em
-		right: 0.5em
-	&__reactions--hidden
-		display: none
-	&__reactions--visible
-		display: block
 	&:hover
 		cursor: pointer
-.ferment:hover > .ferment__info > .fa-info-circle
-	color: $accentcolor
-	transform: scale(1.3)
-.fa-info-circle, .fa-file-text-o
-	margin-left: 5px
-	color: $darkercolor
-	transition: transform 0.3s linear 0s
 @media screen and (max-width:600px)
 	.ferment
 		min-width: 100%
@@ -56,5 +37,3 @@
 			background-color: $accentcolor
 			height: 1px
 			border: 0
-	.fa-info-circle, .fa-file-text-o
-		display: none

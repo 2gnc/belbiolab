@@ -302,35 +302,8 @@
   .ferment__desc {
     font-family: "Roboto", sans-serif;
     font-size: 0.8em; }
-  .ferment__info {
-    position: absolute;
-    bottom: 0.5em;
-    left: 0.5em; }
-  .ferment__reactions {
-    position: absolute;
-    bottom: 0.5em;
-    right: 0.5em; }
-  .ferment__reactions--hidden {
-    display: none; }
-  .ferment__reactions--visible {
-    display: block; }
   .ferment:hover {
     cursor: pointer; }
-
-.ferment:hover > .ferment__info > .fa-info-circle {
-  color: #ff5722;
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3); }
-
-.fa-info-circle, .fa-file-text-o {
-  margin-left: 5px;
-  color: #0097a7;
-  -webkit-transition: -webkit-transform 0.3s linear 0s;
-  transition: -webkit-transform 0.3s linear 0s;
-  -o-transition: transform 0.3s linear 0s;
-  transition: transform 0.3s linear 0s;
-  transition: transform 0.3s linear 0s, -webkit-transform 0.3s linear 0s; }
 
 @media screen and (max-width: 600px) {
   .ferment {
@@ -346,9 +319,7 @@
       margin: 0.5em auto;
       background-color: #ff5722;
       height: 1px;
-      border: 0; }
-  .fa-info-circle, .fa-file-text-o {
-    display: none; } }
+      border: 0; } }
 
 .about__header {
   text-transform: uppercase;
