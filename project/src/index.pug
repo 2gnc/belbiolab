@@ -33,7 +33,7 @@ html(lang='ru')
 		header.header
 			.container
 				.header__logo
-					img.header__logo-img(src = 'img/logo1.png')
+					img.header__logo-img(src = 'img/logo1.png' srcset='img/logo.png 480w, img/logo1.png 800w' sizes='(min-width:480px) and (max-width:800px) 480w')
 				nav.header__nav.nav
 					a.nav__item(href="#aboutsection") о компании
 		section.calltoaction
@@ -119,7 +119,9 @@ html(lang='ru')
 		section.calltoaction
 			.container.container--cta
 					h2.calltoaction__header Для заказа ферментов просто позвоните нам!
-					h2.calltoaction__header +7 (917) 598-31-02 или напишите belbiolab@gmail.com
+					h2.calltoaction__header +7 (917) 598-31-02 
+					h2.calltoaction__header или напишите 
+					h2.calltoaction__header belbiolab@gmail.com
 		section.about#aboutsection
 			.container.container--about
 				h2.about__header О компании
@@ -142,8 +144,9 @@ html(lang='ru')
 				p.contacts__content
 					i(class="fa fa-clock-o" aria-hidden="true")
 					|пн-пт 9:30 - 18:00
+					br
 					i(class="fa fa-phone" aria-hidden="true") 
-					| +7 (917) 598-31-02
+					|+7(917)598-31-02
 				address.contacts__content
 					i(class="fa fa-map-marker" aria-hidden="true") 
 					|г. Москва, ул. Профсоюзная д.58/32
