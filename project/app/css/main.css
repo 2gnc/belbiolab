@@ -400,6 +400,14 @@
     width: 100%;
     margin-top: 1.5em; }
 
+@media screen and (max-width: 600px) {
+  .ferment-details__box {
+    width: 95vw;
+    height: 95vh;
+    left: 2.5vw;
+    top: 2.5vh;
+    padding: 1em; } }
+
 .ferment-table {
   width: 100%; }
   .ferment-table__header {
@@ -412,6 +420,22 @@
     width: 80%; }
   .ferment-table__list {
     margin-left: 2em; }
+
+@media screen and (max-width: 600px) {
+  .ferment-table {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    position: absolute; }
+    .ferment-table--mobile {
+      position: static;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1); }
+  .ferment-table__header--mobile {
+    color: #0097a7; }
+  .ferment-table__desc--mobile {
+    text-align: justify; } }
 
 .price {
   text-align: center;
