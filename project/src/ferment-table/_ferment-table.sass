@@ -10,11 +10,14 @@
 		width: 80%
 	&__list
 		margin-left: 2em
+	&--mobile
+		display: none
 @media screen and (max-width:600px)
 	.ferment-table
 		transform: scale(0)
 		position: absolute
 		&--mobile
+			display: block
 			position: static
 			transform: scale(1)
 	.ferment-table__header--mobile

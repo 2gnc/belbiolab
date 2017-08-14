@@ -422,6 +422,8 @@
     width: 80%; }
   .ferment-table__list {
     margin-left: 2em; }
+  .ferment-table--mobile {
+    display: none; }
 
 @media screen and (max-width: 600px) {
   .ferment-table {
@@ -430,6 +432,7 @@
     transform: scale(0);
     position: absolute; }
     .ferment-table--mobile {
+      display: block;
       position: static;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
