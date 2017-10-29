@@ -14,7 +14,7 @@ gulp.task( 'pug', function() {
 	} );
 
 gulp.task( 'sass', function() {
-	return gulp.src( 'src/main.sass' )
+	return gulp.src( 'src/**.sass' )
 	.pipe(sass())
 	.pipe(autopref({
 		browsers: ['last 5 versions'],

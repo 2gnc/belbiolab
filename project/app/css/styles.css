@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=cyrillic");
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+.fa-phone, .fa-map-marker {
+  padding: 0 1em 0 2em; }
+
+.v2header {
+  width: 100vw;
+  background-color: black;
+  padding: 0.5em 0;
+  color: #ff5722;
+  -webkit-box-shadow: 0 0 10px 5px black;
+  box-shadow: 0 0 10px 5px black; }
+  .v2header__wrapper {
+    width: 100vw;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 0.8em; }
+
+.v2article {
+  background-color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .v2article__header {
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 25vw;
+    max-height: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .v2article__header--about {
+      background-image: url(/img/bg/DSC04352-1.jpg); }
+    .v2article__header--taqa {
+      background-image: url(/img/bg/DSC04357.jpg); }
+    .v2article__header--taqd {
+      background-image: url(/img/bg/DSC04364.jpg); }
+    .v2article__header--taq {
+      background-image: url(/img/bg/DSC04426.jpg); }
+    .v2article__header--proteinazek {
+      background-image: url(/img/bg/DSC04471.jpg); }
+  .v2article__headind-bg {
+    background-color: black;
+    width: 80vw;
+    max-width: 1170px;
+    text-align: center;
+    padding: 1em;
+    -webkit-transform: skewX(30deg);
+    -ms-transform: skewX(30deg);
+    transform: skewX(30deg); }
+  .v2article__heading {
+    font-family: 'Roboto Condensed';
+    color: white;
+    -webkit-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+    font-size: 1.5em; }
+    .v2article__heading::first-letter {
+      color: #ff5722;
+      font-size: 120%; }
+  .v2article__body {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    font-family: 'Roboto';
+    width: 100vw;
+    max-width: 1280px;
+    padding: 2em 1em;
+    text-align: justify; }

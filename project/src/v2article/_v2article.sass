@@ -1,0 +1,50 @@
+.v2article
+	background-color: $bgcolor
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__header
+		background-attachment: fixed
+		background-position: top
+		background-repeat: no-repeat
+		background-size: cover
+		width: 100vw
+		height: 25vw
+		max-height: 400px
+		display: flex
+		align-items: center
+		justify-content: center
+		&--about
+			background-image: url(/img/bg/DSC04352-1.jpg)
+		&--taqa
+			background-image: url(/img/bg/DSC04357.jpg)
+		&--taqd
+			background-image: url(/img/bg/DSC04364.jpg)
+		&--taq
+			background-image: url(/img/bg/DSC04426.jpg)
+		&--proteinazek
+			background-image: url(/img/bg/DSC04471.jpg)
+	&__headind-bg
+		background-color: $bgcolor
+		width: 80vw
+		max-width: 1170px
+		text-align: center
+		padding: 1em
+		transform: skewX(30deg)
+	&__heading
+		font-family: 'Roboto Condensed'
+		color: white
+		transform: skewX(-30deg)
+		font-size: 1.5em
+		&::first-letter
+			color: $accentcolor
+			font-size: 120%
+	&__body
+		background-color: $bgcolor
+		color: white
+		font-size: 1em
+		font-family: 'Roboto'
+		width: 100vw
+		max-width: $contw
+		padding: 2em 1em
+		text-align: justify
