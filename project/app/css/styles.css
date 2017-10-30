@@ -59,15 +59,13 @@ html {
   .v2intro__body {
     font-family: 'Roboto';
     text-align: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     -webkit-transform: skewX(30deg);
     -ms-transform: skewX(30deg);
     transform: skewX(30deg);
     padding: 3em;
     width: 80%;
-    margin: 0 auto;
-    -webkit-box-shadow: 5px 0 10px 10px black;
-    box-shadow: 5px 0 10px 10px black; }
+    margin: 0 auto; }
   .v2intro__text {
     padding-top: 1em;
     -webkit-transform: skewX(-30deg);
@@ -97,7 +95,7 @@ html {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.8); }
   .v2button:hover {
     color: white; }
     .v2button:hover::after {
@@ -168,8 +166,16 @@ html {
       background-image: url(/img/bg/DSC04471.jpg); }
     .v2article__header--diamantrevertp {
       background-image: url(/img/bg/DSC04536.jpg); }
+    .v2article__header--diamantrevertm {
+      background-image: url(/img/bg/DSC04573.jpg); }
+    .v2article__header--blitz {
+      background-image: url(/img/bg/DSC04611.jpg); }
+    .v2article__header--onestep {
+      background-image: url(/img/bg/DSC04638.jpg); }
+    .v2article__header--fastprobe {
+      background-image: url(/img/bg/DSC04685.jpg); }
   .v2article__headind-bg {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     width: 60vw;
     max-width: 1000px;
     text-align: center;
@@ -205,7 +211,3 @@ html {
     max-width: 1280px;
     padding: 2em 1em;
     text-align: justify; }
-    .v2article__body--intro {
-      -webkit-transform: skewX(-30deg);
-      -ms-transform: skewX(-30deg);
-      transform: skewX(-30deg); }
