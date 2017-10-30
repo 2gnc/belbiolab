@@ -39,6 +39,90 @@ html {
     font-family: Roboto;
     font-size: 0.8em; }
 
+.v2intro {
+  color: white;
+  padding: 5em;
+  background-image: url(/img/bg/DSC04797.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  -webkit-box-shadow: inset 10px 0 30px 20px black;
+  box-shadow: inset 10px 0 30px 20px black; }
+  .v2intro__heading {
+    font-family: 'Roboto Condensed';
+    text-align: center; }
+    .v2intro__heading::first-letter {
+      color: #ff5722;
+      font-size: 120%; }
+  .v2intro__body {
+    font-family: 'Roboto';
+    text-align: center;
+    background-color: black;
+    -webkit-transform: skewX(30deg);
+    -ms-transform: skewX(30deg);
+    transform: skewX(30deg);
+    padding: 3em;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-shadow: 5px 0 10px 10px black;
+    box-shadow: 5px 0 10px 10px black; }
+  .v2intro__text {
+    padding-top: 1em;
+    -webkit-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    transform: skewX(-30deg); }
+  .v2intro__buttons {
+    font-family: 'Roboto Condensed';
+    margin-top: 2em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 70%;
+    margin: 2em auto; }
+
+.v2button {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: block;
+  outline: 1px solid #ff5722;
+  padding: 0.8em 2em;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: black; }
+  .v2button:hover {
+    color: white; }
+    .v2button:hover::after {
+      opacity: 1;
+      -webkit-transform: skewx(60deg);
+      -ms-transform: skewx(60deg);
+      transform: skewx(60deg); }
+  .v2button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    background-color: #ff5722;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: skewx(360deg);
+    -ms-transform: skewx(360deg);
+    transform: skewx(360deg);
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear; }
+
 .v2article {
   background-color: black;
   display: -webkit-box;
@@ -74,8 +158,6 @@ html {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .v2article__header--about {
-      background-image: url(/img/bg/DSC04352-1.jpg); }
     .v2article__header--taqa {
       background-image: url(/img/bg/DSC04357.jpg); }
     .v2article__header--taqd {
@@ -88,13 +170,22 @@ html {
       background-image: url(/img/bg/DSC04536.jpg); }
   .v2article__headind-bg {
     background-color: black;
-    width: 80vw;
-    max-width: 1170px;
+    width: 60vw;
+    max-width: 1000px;
     text-align: center;
     padding: 1em;
     -webkit-transform: skewX(30deg);
     -ms-transform: skewX(30deg);
     transform: skewX(30deg); }
+    .v2article__headind-bg--intro {
+      -webkit-transform: skewX(0deg);
+      -ms-transform: skewX(0deg);
+      transform: skewX(0deg);
+      background-color: transparent;
+      width: 80vw;
+      max-width: 1170px;
+      padding-left: 5em;
+      padding-right: 5em; }
   .v2article__heading {
     font-family: 'Roboto Condensed';
     color: white;
@@ -114,3 +205,7 @@ html {
     max-width: 1280px;
     padding: 2em 1em;
     text-align: justify; }
+    .v2article__body--intro {
+      -webkit-transform: skewX(-30deg);
+      -ms-transform: skewX(-30deg);
+      transform: skewX(-30deg); }
