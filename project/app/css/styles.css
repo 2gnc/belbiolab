@@ -19,7 +19,7 @@ html {
 .v2header {
   width: 100%;
   background-color: black;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   color: #ff5722;
   position: fixed;
   z-index: 5; }
@@ -41,6 +41,44 @@ html {
     align-items: center;
     font-family: Roboto;
     font-size: 0.8em; }
+
+.v2lang {
+  width: 6em;
+  height: 2em;
+  border: 1px solid #ff5722;
+  -webkit-transform: skewX(30deg);
+  -ms-transform: skewX(30deg);
+  transform: skewX(30deg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  position: relative; }
+  .v2lang__lang {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ff5722; }
+    .v2lang__lang--ru {
+      left: 0; }
+    .v2lang__lang--en {
+      right: 0; }
+  .v2lang__text {
+    -webkit-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+    display: block;
+    width: 50%;
+    text-align: center;
+    line-height: 2em; }
+  .v2lang:hover {
+    cursor: pointer; }
 
 .v2nav--hidden {
   position: fixed;

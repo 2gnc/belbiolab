@@ -1,1 +1,27 @@
 .v2lang
+	width: 6em
+	height: 2em
+	border: 1px solid $accentcolor
+	transform: skewX(30deg)
+	display: flex
+	color: white
+	position: relative
+	&__lang
+		position: absolute
+		width: 50%
+		height: 100%
+		top: 0
+		display: flex
+		background-color: $accentcolor
+		&--ru
+			left: 0
+		&--en
+			right: 0
+	&__text
+		transform: skewX(-30deg)
+		display: block
+		width: 50%
+		text-align: center
+		line-height: 2em
+	&:hover
+		cursor: pointer
