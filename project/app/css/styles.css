@@ -20,7 +20,9 @@ html {
   width: 100%;
   background-color: black;
   padding: 0.5em;
-  color: #ff5722; }
+  color: #ff5722;
+  position: fixed;
+  z-index: 5; }
   .v2header__wrapper {
     width: 100%;
     max-width: 1280px;
