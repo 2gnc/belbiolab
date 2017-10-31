@@ -1,10 +1,11 @@
 .v2nav
 	&--hidden
 		position: fixed
-		width: 5vw
-		height: 70vh
+		width: 4vw
+		height: 35vw
 		background-color: rgba(0, 0, 0, 0.8)
-		border: 2px solid $accentcolor
+		border: 1px solid $accentcolor
+		border-right: none
 		right: 0
 		top: 50%
 		transform: translateY(-50%)
@@ -12,14 +13,44 @@
 		flex-direction: column
 		justify-content: center
 		align-items: center
+		box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5)
 		&:hover
 			cursor: pointer
 		&::after
 			content: 'каталог продукции'
 			color: white
-			width: 70vh
-			height: 5vw
+			width: 35vw
+			height: 4vw
 			transform: rotate(-90deg)
 			display: flex
 			justify-content: center
 			align-items: center
+			text-transform: uppercase
+			font-family: 'Roboto Condensed'
+			letter-spacing: 0.4em
+			font-weight: 700
+			transition: all 0.2s linear
+		&:hover::after
+			color: $accentcolor
+		&::before
+			content: '\f104 \f104'
+			font-family: FontAwesome
+			display: block
+			color: white
+			position: absolute
+			top: 1vw
+			font-size: 1.5em
+			animation: arrow 0.8s linear infinite
+			transition: all 0.2s linear
+		&:hover::before
+			animation: arrow paused
+			color: $accentcolor
+@keyframes arrow
+	0%
+		right: 1.0vw
+	40%
+		right: 1.5vw
+		color: $accentcolor
+	100% 
+		right: 1vw
+

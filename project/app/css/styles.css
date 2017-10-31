@@ -42,10 +42,11 @@ html {
 
 .v2nav--hidden {
   position: fixed;
-  width: 5vw;
-  height: 70vh;
+  width: 4vw;
+  height: 35vw;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 2px solid #ff5722;
+  border: 1px solid #ff5722;
+  border-right: none;
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -67,14 +68,16 @@ html {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5); }
   .v2nav--hidden:hover {
     cursor: pointer; }
   .v2nav--hidden::after {
     content: 'каталог продукции';
     color: white;
-    width: 70vh;
-    height: 5vw;
+    width: 35vw;
+    height: 4vw;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
@@ -89,7 +92,51 @@ html {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed';
+    letter-spacing: 0.4em;
+    font-weight: 700;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .v2nav--hidden:hover::after {
+    color: #ff5722; }
+  .v2nav--hidden::before {
+    content: '\f104 \f104';
+    font-family: FontAwesome;
+    display: block;
+    color: white;
+    position: absolute;
+    top: 1vw;
+    font-size: 1.5em;
+    -webkit-animation: arrow 0.8s linear infinite;
+    animation: arrow 0.8s linear infinite;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+  .v2nav--hidden:hover::before {
+    -webkit-animation: arrow paused;
+    animation: arrow paused;
+    color: #ff5722; }
+
+@-webkit-keyframes arrow {
+  0% {
+    right: 1.0vw; }
+  40% {
+    right: 1.5vw;
+    color: #ff5722; }
+  100% {
+    right: 1vw; } }
+
+@keyframes arrow {
+  0% {
+    right: 1.0vw; }
+  40% {
+    right: 1.5vw;
+    color: #ff5722; }
+  100% {
+    right: 1vw; } }
 
 .v2intro {
   color: white;
@@ -261,5 +308,5 @@ html {
     font-family: 'Roboto';
     width: 100%;
     max-width: 1280px;
-    padding: 2em 1em;
+    padding: 2em 6vw;
     text-align: justify; }
