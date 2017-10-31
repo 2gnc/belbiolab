@@ -3,6 +3,7 @@
 		position: fixed
 		width: 4vw
 		height: 35vw
+		min-height: 360px
 		background-color: rgba(0, 0, 0, 0.8)
 		border: 1px solid $accentcolor
 		border-right: none
@@ -18,15 +19,16 @@
 			cursor: pointer
 		&::after
 			content: 'каталог продукции'
-			color: white
+			color: $txtcolor
 			width: 35vw
+			min-width: 360px
 			height: 4vw
 			transform: rotate(-90deg)
 			display: flex
 			justify-content: center
 			align-items: center
 			text-transform: uppercase
-			font-family: 'Roboto Condensed'
+			font-family: $headerfont
 			letter-spacing: 0.4em
 			font-weight: 700
 			transition: all 0.2s linear
@@ -36,7 +38,7 @@
 			content: '\f104 \f104'
 			font-family: FontAwesome
 			display: block
-			color: white
+			color: $txtcolor
 			position: absolute
 			top: 1vw
 			font-size: 1.5em

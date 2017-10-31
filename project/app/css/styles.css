@@ -18,7 +18,7 @@ html {
 
 .v2header {
   width: 100%;
-  background-color: black;
+  background-color: #000000;
   padding: 0.5em 1em;
   color: #ff5722;
   position: fixed;
@@ -39,8 +39,68 @@ html {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 0.8em; }
+
+.v2heading {
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 25vw;
+  max-height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .v2heading--taqa {
+    background-image: url(/img/bg/DSC04357.jpg); }
+  .v2heading--taqd {
+    background-image: url(/img/bg/DSC04364.jpg); }
+  .v2heading--taq {
+    background-image: url(/img/bg/DSC04426.jpg); }
+  .v2heading--proteinazek {
+    background-image: url(/img/bg/DSC04471.jpg); }
+  .v2heading--diamantrevertp {
+    background-image: url(/img/bg/DSC04536.jpg); }
+  .v2heading--diamantrevertm {
+    background-image: url(/img/bg/DSC04573.jpg); }
+  .v2heading--blitz {
+    background-image: url(/img/bg/DSC04611.jpg); }
+  .v2heading--onestep {
+    background-image: url(/img/bg/DSC04638.jpg); }
+  .v2heading--fastprobe {
+    background-image: url(/img/bg/DSC04685.jpg); }
+  .v2heading--contacts {
+    background-image: url(/img/bg/contacts.jpg); }
+  .v2heading__text {
+    font-family: "Roboto Condensed";
+    color: #ffffff;
+    -webkit-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+    font-size: 1.5em; }
+    .v2heading__text::first-letter {
+      color: #ff5722;
+      font-size: 120%; }
+  .v2heading__text-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 60vw;
+    max-width: 1000px;
+    text-align: center;
+    padding: 1em;
+    -webkit-transform: skewX(30deg);
+    -ms-transform: skewX(30deg);
+    transform: skewX(30deg); }
 
 .v2lang {
   width: 6em;
@@ -84,6 +144,7 @@ html {
   position: fixed;
   width: 4vw;
   height: 35vw;
+  min-height: 360px;
   background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid #ff5722;
   border-right: none;
@@ -115,8 +176,9 @@ html {
     cursor: pointer; }
   .v2nav--hidden::after {
     content: 'каталог продукции';
-    color: white;
+    color: #ffffff;
     width: 35vw;
+    min-width: 360px;
     height: 4vw;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -134,7 +196,7 @@ html {
     -ms-flex-align: center;
     align-items: center;
     text-transform: uppercase;
-    font-family: 'Roboto Condensed';
+    font-family: "Roboto Condensed";
     letter-spacing: 0.4em;
     font-weight: 700;
     -webkit-transition: all 0.2s linear;
@@ -146,7 +208,7 @@ html {
     content: '\f104 \f104';
     font-family: FontAwesome;
     display: block;
-    color: white;
+    color: #ffffff;
     position: absolute;
     top: 1vw;
     font-size: 1.5em;
@@ -261,7 +323,7 @@ html {
     transition: all 0.4s linear; }
 
 .v2article {
-  background-color: black;
+  background-color: #000000;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -275,78 +337,44 @@ html {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-  .v2article__header {
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 25vw;
-    max-height: 400px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .v2article__header--taqa {
-      background-image: url(/img/bg/DSC04357.jpg); }
-    .v2article__header--taqd {
-      background-image: url(/img/bg/DSC04364.jpg); }
-    .v2article__header--taq {
-      background-image: url(/img/bg/DSC04426.jpg); }
-    .v2article__header--proteinazek {
-      background-image: url(/img/bg/DSC04471.jpg); }
-    .v2article__header--diamantrevertp {
-      background-image: url(/img/bg/DSC04536.jpg); }
-    .v2article__header--diamantrevertm {
-      background-image: url(/img/bg/DSC04573.jpg); }
-    .v2article__header--blitz {
-      background-image: url(/img/bg/DSC04611.jpg); }
-    .v2article__header--onestep {
-      background-image: url(/img/bg/DSC04638.jpg); }
-    .v2article__header--fastprobe {
-      background-image: url(/img/bg/DSC04685.jpg); }
-  .v2article__headind-bg {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 60vw;
-    max-width: 1000px;
-    text-align: center;
-    padding: 1em;
-    -webkit-transform: skewX(30deg);
-    -ms-transform: skewX(30deg);
-    transform: skewX(30deg); }
-    .v2article__headind-bg--intro {
-      -webkit-transform: skewX(0deg);
-      -ms-transform: skewX(0deg);
-      transform: skewX(0deg);
-      background-color: transparent;
-      width: 80vw;
-      max-width: 1170px;
-      padding-left: 5em;
-      padding-right: 5em; }
-  .v2article__heading {
-    font-family: 'Roboto Condensed';
-    color: white;
-    -webkit-transform: skewX(-30deg);
-    -ms-transform: skewX(-30deg);
-    transform: skewX(-30deg);
-    font-size: 1.5em; }
-    .v2article__heading::first-letter {
-      color: #ff5722;
-      font-size: 120%; }
   .v2article__body {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
     font-size: 1em;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     width: 100%;
     max-width: 1280px;
     padding: 2em 6vw;
     text-align: justify; }
+
+.v2contacts {
+  background-color: #000000;
+  color: #ffffff; }
+  .v2contacts__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 1280px;
+    padding: 2em 6vw;
+    margin: 0 auto;
+    font-family: "Roboto"; }
+  .v2contacts__contacts {
+    width: 50%;
+    min-width: 450px; }
+  .v2contacts__feedback {
+    width: 50%;
+    min-width: 450px; }
+  .v2contacts__item {
+    outline: 1px solid lime; }
+  .v2contacts__icon {
+    color: #ff5722;
+    font-size: 1.5vw; }
+
+.v2footer {
+  font-family: "Roboto";
+  color: #ffffff; }
