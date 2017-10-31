@@ -44,7 +44,7 @@ html {
 
 .v2lang {
   width: 6em;
-  height: 2em;
+  height: 1.5em;
   border: 1px solid #ff5722;
   -webkit-transform: skewX(30deg);
   -ms-transform: skewX(30deg);
@@ -76,7 +76,7 @@ html {
     display: block;
     width: 50%;
     text-align: center;
-    line-height: 2em; }
+    line-height: 1.5em; }
   .v2lang:hover {
     cursor: pointer; }
 
