@@ -328,6 +328,8 @@ html {
   .v2button--btn {
     border: none;
     margin-top: 2em; }
+    .v2button--btn:hover {
+      cursor: pointer; }
 
 .v2article {
   background-color: #000000;
