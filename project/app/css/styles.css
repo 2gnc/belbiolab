@@ -212,8 +212,8 @@ html {
     position: absolute;
     top: 1vw;
     font-size: 1.5em;
-    -webkit-animation: arrow 0.8s linear infinite;
-    animation: arrow 0.8s linear infinite;
+    -webkit-animation: arrow 2.5s linear infinite;
+    animation: arrow 2.5s linear infinite;
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear; }
@@ -225,18 +225,22 @@ html {
 @-webkit-keyframes arrow {
   0% {
     right: 1.0vw; }
-  40% {
+  20% {
     right: 1.5vw;
     color: #ff5722; }
+  50% {
+    right: 1vw; }
   100% {
     right: 1vw; } }
 
 @keyframes arrow {
   0% {
     right: 1.0vw; }
-  40% {
+  20% {
     right: 1.5vw;
     color: #ff5722; }
+  50% {
+    right: 1vw; }
   100% {
     right: 1vw; } }
 
@@ -321,6 +325,9 @@ html {
     -webkit-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
     transition: all 0.4s linear; }
+  .v2button--btn {
+    border: none;
+    margin-top: 2em; }
 
 .v2article {
   background-color: #000000;
@@ -370,11 +377,19 @@ html {
     width: 50%;
     min-width: 450px; }
   .v2contacts__item {
-    outline: 1px solid lime; }
+    margin-bottom: 1.5em; }
   .v2contacts__icon {
     color: #ff5722;
-    font-size: 1.5vw; }
+    font-size: 2vw;
+    margin-right: 0.5em; }
+  .v2contacts__contat-text {
+    line-height: 2vw;
+    font-size: 1rem; }
 
 .v2footer {
   font-family: "Roboto";
   color: #ffffff; }
+
+.v2form__field {
+  padding: 0.5em 0;
+  position: relative; }

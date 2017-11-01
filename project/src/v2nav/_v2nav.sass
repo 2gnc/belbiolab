@@ -42,7 +42,7 @@
 			position: absolute
 			top: 1vw
 			font-size: 1.5em
-			animation: arrow 0.8s linear infinite
+			animation: arrow 2.5s linear infinite
 			transition: all 0.2s linear
 		&:hover::before
 			animation: arrow paused
@@ -50,9 +50,11 @@
 @keyframes arrow
 	0%
 		right: 1.0vw
-	40%
+	20%
 		right: 1.5vw
 		color: $accentcolor
-	100% 
+	50% 
+		right: 1vw
+	100%
 		right: 1vw
 

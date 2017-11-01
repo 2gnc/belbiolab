@@ -83,12 +83,26 @@ html(lang="ru")
 					.v2contacts__contacts 
 						.v2contacts__item 
 							i(class="fa fa-street-view v2contacts__icon" aria-hidden="true")
-							span.v2contacts__contat-text Адрес
+							span.v2contacts__contat-text Адрес: г. Москва, ул. Профсоюзная д.58/32
 						.v2contacts__item
 							i(class="fa fa-volume-control-phone v2contacts__icon" aria-hidden="true")
-							span.v2contacts__contat-text Телефон
+							span.v2contacts__contat-text Телефон: +7 (917) 598-31-02
 						.v2contacts__item
 							i(class="fa fa-clock-o v2contacts__icon" aria-hidden="true")
-							span.v2contacts__contat-text Часы работы
-					.v2contacts__feedback  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur omnis distinctio cum quisquam nam quod reprehenderit id laudantium! At accusantium ex ut est et a maxime repudiandae nihil magni!
+							span.v2contacts__contat-text Часы работы: 09:30 - 19:00
+					.v2contacts__feedback
+						form.v2form(action="#")
+							.v2form__field
+								input.v2form__inpt(type="text" id="name" placeholder="Ваше имя")
+								label.v2form__lbl(for="name") Имя
+							.v2form__field
+								input.v2form__inpt(type="text" id="email" placeholder="Ваш email")
+								label.v2form__lbl(for="name") email
+							.v2form__field
+								input.v2form__inpt(type="text" id="phone" placeholder="Ваш телефон")
+								label.v2form__lbl(for="name") Телефон
+							.v2form__field
+								input.v2form__inpt(type="textarea" id="msg" placeholder="Сообщение")
+								label.v2form__lbl(for="name") Сообщение
+							button.v2button.v2button--btn отправить
 			footer.v2footer
