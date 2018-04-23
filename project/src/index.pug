@@ -80,6 +80,10 @@ html(lang='ru')
 						h2.ferment__name 2X Fast Probe qPCR Mastermix
 						hr.ferment__line
 						p.ferment__desc Готовая смесь для ПЦР.
+					.ferment(id="uracyl" data-reactions="")
+						h2.ferment__name Урацил-ДНК-гликозилаза
+						hr.ferment__line
+						p.ferment__desc Используется в ПЦР смесях для предотвращения появления ложноположительных результатов.
 				.main__right-side
 					ul.reactions
 						li.reactions__item(id="r-revert") Ревертирование
@@ -748,46 +752,6 @@ html(lang='ru')
 				h2.ferment-details__header 2X One-Step RT-PCR Mastermix
 				hr.ferment-details__line
 				p.ferment-details__desc Информация по запросу.
-				//- table.ferment-table
-				//- 	tr
-				//- 		td.ferment-table__header Источник
-				//- 		td.ferment-table__desc 
-				//- 	tr
-				//- 		td.ferment-table__header Единица активности
-				//- 		td.ferment-table__desc 
-				//- 	tr
-				//- 		td.ferment-table__header Концентрация
-				//- 		td.ferment-table__desc 
-				//- 	tr
-				//- 		td.ferment-table__header Буфер для хранения и разведения
-				//- 		td.ferment-table__desc 
-				//- 	tr
-				//- 		td.ferment-table__header Буфер для амплификации 10X
-				//- 		td.ferment-table__desc 
-				//- 	tr
-				//- 		td.ferment-table__header Область применения
-				//- 		td.ferment-table__desc 
-				//- 			ul.ferment-table__list
-				//- 				li 
-				//- 				li 
-				//- 				li 
-				//- 	tr
-				//- 		td.ferment-table__header Сопутствующие активности
-				//- 		td.ferment-table__desc 
-				//- 	tr
-				//- 		td.ferment-table__header Условия хранения и транспортировки
-				//- 		td.ferment-table__desc 
-				//- 	tr
-				//- 		td.ferment-table__header Срок годности
-				//- 		td.ferment-table__desc
-				//- 	tr
-				//- 		td.ferment-table__header Документы
-				//- 		td.ferment-table__desc
-				//- 			ul.ferment-details__downloads
-				//- 				li.ferment-details__download-item
-				//- 					a.ferment-details__link(href="#")
-				//- 						i(class="fa fa-file-pdf-o" aria-hidden="true")
-				//- 						| Протокол 
 		article.ferment-details.ferment-details--hidden(data-ferment="fastprobe")
 			.ferment-details__box
 				p.ferment-details__close Закрыть окно [x]
@@ -870,6 +834,62 @@ html(lang='ru')
 					p.ferment-table__desc--mobile
 					h3.ferment-table__header--mobile
 					p.ferment-table__desc--mobile
+		
+		article.ferment-details.ferment-details--hidden(data-ferment="uracyl")
+			.ferment-details__box
+				p.ferment-details__close Закрыть окно [x]
+				h2.ferment-details__header Урацил-ДНК-гликозилаза
+				hr.ferment-details__line
+				p.ferment-details__desc Урацил-ДНК-гликозилаза (UDG) катализирует высвобождение свободного урацила из урацил-содержащих ДНК. UDG эффективно гидролизует урацил из одно- и двуцепочечных ДНК. Используется в ПЦР смесях для предотвращения появления ложноположительных результатов, которые в свою очередь вызваны контаминацией реакционной ПЦР-смеси продуктами ранее выполненной ПЦР.
+				table.ferment-table
+					tr
+						td.ferment-table__header Состав
+						td.ferment-table__desc Урацил-ДНК-гликозилаза – 5 ед/мкл;
+					tr
+						td.ferment-table__header Источник
+						td.ferment-table__desc Рекомбинантный штамма E.coli.
+					tr
+						td.ferment-table__header Единица активности
+						td.ferment-table__desc За одну единицу активности принимали количество фермента, необходимое для высвобождения 60 пмолей урацила за 1 мин из двуцепочечной урацил-содержащей ДНК при 37°С.
+					tr
+						td.ferment-table__header Буфер для хранения и разведения
+						td.ferment-table__desc 20 mM Tris-HCl (pH 8.8); 100 mM KCl; 0,5 mM EDTA; 0,5% Tween 20; 50% глицерин.
+					tr
+						td.ferment-table__header Область применения
+						td.ferment-table__desc В ПЦР и ПЦР-РВ для предотвращения появления ложноположительных результатов.
+					tr
+						td.ferment-table__header Условия хранения
+						td.ferment-table__desc UDG хранится при температурах от -20°С до 4°С.
+					tr
+						td.ferment-table__header Условия транспортировки
+						td.ferment-table__desc UDG можно транспортировать при комнатной температуре.
+					tr
+						td.ferment-table__header Срок годности
+						td.ferment-table__desc 1 год со дня проведения тестирования (хранение при -20°C).
+				.ferment-details__price.price
+					.price__plan
+						p.price__price по запросу
+						p.price__desc Объем поставки: по запросу
+						p.price__details Срок поставки: от 5 рабочих дней.
+						button.price__button Заказать
+				.ferment-table.ferment-table--mobile
+					h3.ferment-table__header--mobile Состав
+					p.ferment-table__desc--mobile Урацил-ДНК-гликозилаза – 5 ед/мкл;
+					h3.ferment-table__header--mobile Источник
+					p.ferment-table__desc--mobile Рекомбинантный штамма E.coli.
+					h3.ferment-table__header--mobile Единица активности
+					p.ferment-table__desc--mobile За одну единицу активности принимали количество фермента, необходимое для высвобождения 60 пмолей урацила за 1 мин из двуцепочечной урацил-содержащей ДНК при 37°С.
+					h3.ferment-table__header--mobile Буфер для хранения и разведения
+					p.ferment-table__desc--mobile 20 mM Tris-HCl (pH 8.8); 100 mM KCl; 0,5 mM EDTA; 0,5% Tween 20; 50% глицерин.
+					h3.ferment-table__header--mobile Область применения
+					p.ferment-table__desc--mobile В ПЦР и ПЦР-РВ для предотвращения появления ложноположительных результатов;
+					h3.ferment-table__header--mobile Условия хранения
+					p.ferment-table__desc--mobile UDG хранится при температурах от -20°С до 4°С.
+					h3.ferment-table__header--mobile Условия транспортировки
+					p.ferment-table__desc--mobile UDG можно транспортировать при комнатной температуре.
+					h3.ferment-table__header--mobile Срок годности
+					p.ferment-table__desc--mobile 1 год со дня проведения тестирования (хранение при -20&degC).
+
 		script(src="js/scripts.js")
 		script(type='text/javascript').
 			(function (d, w, c) {
