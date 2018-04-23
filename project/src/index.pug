@@ -565,26 +565,21 @@ html(lang='ru')
 				p.ferment-details__close Закрыть окно [x]
 				h2.ferment-details__header Diamant RevertM РНК-зависимая ДНК-полимераза
 				hr.ferment-details__line
-				p.ferment-details__desc Diamant RevertM обратная транскриптаза (RNase H-) представляет собой белок весом 77 KDa, выделенный из рекомбинантного штамма E.coli, несущего ген обратной транскриптазы вируса мышиной лейкимии Молони.
+				p.ferment-details__desc Ревертаза RevertM представляет собой генетически модифицированную обратную транскриптазу вируса мышиной лейкемии Молони (MMLV), осуществляющую синтез комплементарной цепи ДНК (кДНК) на матрице одноцепочечной РНК. Благодаря наличию нескольких мутаций у фермента подавлена активность РНКазы Н и повышена термостабильность (оптимальная температура для работы фермента – 50&degС, фермент сохраняет активность при температуре до 65&degС).
+				p.ferment-details__desc Ревертаза RevertM по сравнению с MMLV дикого типа обеспечивает более высокий выход кДНК, позволяет амплифицировать более длинные фрагменты (до 12 000 п.о.), имеет улучшенную эффективность при использовании GC-богатых РНК-матриц, а также более высокую продуктивность.
 				table.ferment-table
 					tr
-						td.ferment-table__header Источник
-						td.ferment-table__desc Вирус лейкимии мышей Молони.
-					tr
-						td.ferment-table__header Концентрация
-						td.ferment-table__desc 200 ед/мкл
+						td.ferment-table__header Область применения
+						td.ferment-table__desc 
+							ul.ferment-table__list
+								li Синтез первой цепи кДНК
+								li Анализ РНК при помощи удлинения праймеров
+								li Создание библиотек кДНК
+								li ОТ-ПЦР
+								li Включение в цепь кДНК меченных нуклеотидов
 					tr
 						td.ferment-table__header Буфер для хранения и разведения
 						td.ferment-table__desc 25mM Tris-HCl (pH 7.5); 100mM KCl; 50% глицерин; 0,05% Tween-20; 200 ug/ml polyA.
-					tr
-						td.ferment-table__header Буфер для амплификации 10X
-						td.ferment-table__desc 500 mM Tris-HCl (pH 8.8); 700 mM KCl; 0.5 % Tween-20 или входящий в комплект 10-кратный буфер TG
-					tr
-						td.ferment-table__header Активность рибонуклеазы Н
-						td.ferment-table__desc Отсутствует
-					tr
-						td.ferment-table__header Оптимум температур
-						td.ferment-table__desc Фермент сохраняет активность до 65&degC
 					tr
 						td.ferment-table__header Условия хранения
 						td.ferment-table__desc Diamant RevertM обратная транскриптаза хранится при -20&degС
@@ -593,7 +588,7 @@ html(lang='ru')
 						td.ferment-table__desc Транспортирование Diamant RevertM обратной транскриптазы осуществляется при температуре окружающей среды, но не выше 25&degС (до 5 суток) или при температуре +4&degС (до 30 суток).
 					tr
 						td.ferment-table__header Срок годности
-						td.ferment-table__desc 1 год со дня проведения тестирования (хранение при -20&degC).
+						td.ferment-table__desc 1 год.
 					tr
 						td.ferment-table__header Документы
 						td.ferment-table__desc
@@ -602,6 +597,10 @@ html(lang='ru')
 									a.ferment-details__link(href="files/revertm.pdf")
 										i(class="fa fa-file-pdf-o" aria-hidden="true")
 										| Скачать протокол синтеза кДНК
+								li.ferment-details__download-item
+									a.ferment-details__link(href="files/revertm_instruction.docx")
+										i(class="fa fa-file-pdf-o" aria-hidden="true")
+										| Инструкция
 				.ferment-details__price.price
 					.price__plan
 						p.price__price 24 000 &#8381;
@@ -614,6 +613,14 @@ html(lang='ru')
 						p.price__details Срок поставки: от 7 рабочих дней.
 						button.price__button Заказать
 				.ferment-table.ferment-table--mobile
+					h3.ferment-table__header--mobile Область применения
+					p.ferment-table__desc--mobile
+						ul.ferment-table__list
+								li Синтез первой цепи кДНК
+								li Анализ РНК при помощи удлинения праймеров
+								li Создание библиотек кДНК
+								li ОТ-ПЦР
+								li Включение в цепь кДНК меченных нуклеотидов
 					h3.ferment-table__header--mobile Источник
 					p.ferment-table__desc--mobile Вирус лейкимии мышей Молони.
 					h3.ferment-table__header--mobile Концентрация
@@ -637,6 +644,10 @@ html(lang='ru')
 								a.ferment-details__link(href="files/revertm.pdf")
 									i(class="fa fa-file-pdf-o" aria-hidden="true")
 									| Скачать протокол синтеза кДНК
+							li.ferment-details__download-item
+									a.ferment-details__link(href="files/revertm_instruction.docx")
+										i(class="fa fa-file-pdf-o" aria-hidden="true")
+										| Инструкция
 					h3.ferment-table__header--mobile Срок годности
 					p.ferment-table__desc--mobile 1 год со дня проведения тестирования (хранение при -20&degC).
 		article.ferment-details.ferment-details--hidden(data-ferment="blitz")
