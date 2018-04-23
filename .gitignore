@@ -3,6 +3,9 @@
 *.*#
 ~*.*
 
+project/package-lock.json
+project/yarn-error.log
+
 content
 
 design/colorscheme.txt
